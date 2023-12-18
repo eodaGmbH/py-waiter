@@ -2,7 +2,16 @@
 
 ## Getting started
 
-First install Poetry, then switch to `waiter` folder and run:
+```bash
+pip install git+ssh://git@git.eoda.de/insertnamehere/py-waiter.git
+
+# Dev version
+pip install git+ssh://git@git.eoda.de/insertnamehere/py-waiter.git@dev
+```
+
+### With Poetry
+
+First install [Poetry](https://python-poetry.org/), then run:
 
 ```bash
 poetry install
@@ -12,9 +21,17 @@ poetry run pytest
 poetry shell
 ```
 
+### Without Poetry
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install .
+```
+
 ## Development
 
-Add depemdencies:
+Add dependencies:
 
 ```bash
 poetry add shiny
