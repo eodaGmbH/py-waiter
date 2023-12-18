@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "waiter"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Stefan Kuethe <stefan.kuethe@eoda.de>"]
 readme = "README.md"
+include = [
+    { path = "srcjs", format = ["sdist", "wheel"] }
+]
 
 [tool.poetry.dependencies]
 python = ">=3.8"
