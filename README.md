@@ -3,13 +3,19 @@
 ## Getting started
 
 ```bash
+python -m venv venv
+source venv/bin/activate
+
+# Stable
 pip install git+ssh://git@git.eoda.de/insertnamehere/py-waiter.git
 
 # Dev version
 pip install git+ssh://git@git.eoda.de/insertnamehere/py-waiter.git@dev
 ```
 
-### With Poetry
+See [examples](examples), e. g. run [app.py](examples/app1/app.py)
+
+## Development
 
 First install [Poetry](https://python-poetry.org/), then run:
 
@@ -20,16 +26,6 @@ poetry run pytest
 
 poetry shell
 ```
-
-### Without Poetry
-
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install .
-```
-
-## Development
 
 Add dependencies:
 
