@@ -1,7 +1,9 @@
 import time
 
 from shiny import App, render, ui
-from waiter import use_waiter, waiter_show, waiter_hide
+
+from waiter import use_waiter, waiter_hide, waiter_show
+from waiter.spinners import spin_double_bounce
 
 app_ui = ui.page_fluid(
     use_waiter(),
@@ -14,7 +16,7 @@ app_ui = ui.page_fluid(
 def server(input, output, session):
     @render.text
     async def txt():
-        await waiter_show()
+        await waiter_show(html=spin_double_bounce())
         time.sleep(5)
         await waiter_hide()
         return f"n*2 is {input.n() * 2}"
