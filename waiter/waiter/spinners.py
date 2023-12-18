@@ -21,3 +21,19 @@ def spin_2():
 def spin_double_bounce():
     class_names = ["double-bouncer", "double-bounce1", "double-bounce2"]
     return construct_spinner(class_names)
+
+
+def spin_folding_cube():
+    class_names = [
+        "sk-cube1 sk-cube" "sk-cube2 sk-cube" "sk-cube3 sk-cube" "sk-cube4 sk-cube"
+    ]
+    return construct_spinner(class_names)
+
+
+def spin_rotating_plane():
+    return construct_spinner(["rotating-plane"])
+
+
+def spin_wave():
+    class_names = ["waver", "rect1", "rect2", "rect3"]
+    return construct_spinner(class_names)
