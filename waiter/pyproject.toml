@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "waiter"
+version = "0.1.0"
+description = ""
+authors = ["Stefan Kuethe <stefan.kuethe@eoda.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+htmltools = "^0.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+black = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
