@@ -1,0 +1,10 @@
+image: python:3.9.18
+
+stages:
+  - test
+
+test_waiter:
+  stage: test
+  script:
+    - pip install poetry
+    - poetry run pytest
