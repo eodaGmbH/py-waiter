@@ -38,3 +38,9 @@ Add dev dependencies:
 ```bash
 poetry add isort@latest --group dev
 ```
+
+Buid:
+
+```bash
+poetry build
+```

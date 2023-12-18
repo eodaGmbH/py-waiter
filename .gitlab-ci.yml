@@ -2,6 +2,7 @@ image: python:3.9.18
 
 stages:
   - test
+  - build
 
 test_waiter:
   stage: test
@@ -9,3 +10,10 @@ test_waiter:
     - pip install poetry
     - poetry install
     - poetry run pytest
+
+build_waiter:
+  stage: build
+  script:
+    - pip install poetry
+    - poetry build
+    - ls dist
