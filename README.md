@@ -2,6 +2,9 @@
 
 ## Getting started
 
+This repository provides a py-shiny implementation of the [waiter package from John Coene](https://github.com/JohnCoene/waiter). 
+The waiter package allows the usage of loading screens and spinners in [shiny applications](https://shiny.posit.co/).
+
 ### Installation
 
 ```bash
