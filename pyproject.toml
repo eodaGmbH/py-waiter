@@ -4,6 +4,7 @@ version = "0.1.2"
 description = ""
 authors = ["Stefan Kuethe <stefan.kuethe@eoda.de>"]
 readme = "README.md"
+license = "MIT"
 include = [
     { path = "srcjs", format = ["sdist", "wheel"] }
 ]
