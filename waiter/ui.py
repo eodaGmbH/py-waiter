@@ -1,7 +1,7 @@
 from htmltools import HTMLDependency
 
 
-def use_waiter():
+def use_waiter() -> HTMLDependency:
     return HTMLDependency(
         name="waiter",
         version="1.0.0",
