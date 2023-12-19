@@ -9,10 +9,10 @@ python -m venv venv
 source venv/bin/activate
 
 # Stable
-pip install https://github.com/eodaGmbH/py-waiter@main
+pip install git+https://github.com/eodaGmbH/py-waiter@main
 
 # Dev version
-pip install https://github.com/eodaGmbH/py-waiter@dev
+pip install git+https://github.com/eodaGmbH/py-waiter@dev
 ```
 
 ### Usage
