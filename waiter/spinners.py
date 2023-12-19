@@ -30,3 +30,21 @@ def spin_rotating_plane() -> str:
 def spin_wave() -> str:
     class_names = ["waver", "rect1", "rect2", "rect3"]
     return construct_spinner(class_names)
+
+
+def spin_wandering_cubes() -> str:
+    class_names = ["wandering-cubes", "cube1", "cube2"]
+    return construct_spinner(class_names)
+
+
+def spin_pulse() -> str:
+    return construct_spinner(["pulser"])
+
+
+def spin_chasing_dots() -> str:
+    class_names = ["chasing-dots", "dot1", "dot2"]
+    return construct_spinner(class_names)
+
+
+def spin_three_bounce() -> str:
+    class_names = ["three-bouncer", "bounce1", "bounce2", "bounce3"]
