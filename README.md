@@ -26,6 +26,7 @@ from waiter.spinners import spin_1
 
 app_ui = ui.page_fluid(
     use_waiter(), # include dependencies
+    ui.output_text_verbatim("txt", placeholder=True)
     # ...
 )
 
@@ -34,7 +35,7 @@ def server(input, output, session):
     async def txt():
         await waiter_show("txt", html=spin_1()) # show spinner 1
         time.sleep(5)
-        return f"n*2 is {input.n() * 2}"
+        return "Hello Spinner!"
 ```
 
 ## Examples
