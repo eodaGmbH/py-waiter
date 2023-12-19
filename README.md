@@ -70,7 +70,7 @@ Add dev dependencies:
 poetry add isort@latest --group dev
 ```
 
-Buid:
+Build:
 
 ```bash
 poetry build
