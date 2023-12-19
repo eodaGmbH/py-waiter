@@ -2,11 +2,7 @@ from htmltools import HTMLDependency
 
 
 def use_waiter() -> HTMLDependency:
-    '''
-    Programatically show and hide loading screens.
-    Place this somewhere in the UI code of your shiny app.
-    
-    '''
+    """Add waiter dependencies. Include it anywhere in your UI but ideally at the top."""
     return HTMLDependency(
         name="waiter",
         version="1.0.0",

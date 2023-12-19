@@ -18,6 +18,22 @@ def spin_2() -> str:
     return spin_n(2)
 
 
+def spin_3() -> str:
+    return spin_n(3)
+
+
+def spin_4() -> str:
+    return spin_n(4)
+
+
+def spin_5() -> str:
+    return spin_n(5)
+
+
+def spin_6() -> str:
+    return spin_n(6)
+
+
 def spin_rotating_plane() -> str:
     return construct_spinner(["rotating-plane"])
 
@@ -98,51 +114,78 @@ def spin_circle() -> str:
     ]
     return construct_spinner(class_names)
 
+
 def spin_rotate() -> str:
-    class_names = [
-        "spinner-box","circle-border","circle-core"
-    ]
+    class_names = ["spinner-box", "circle-border", "circle-core"]
     return construct_spinner(class_names)
+
 
 def spin_solar() -> str:
     class_names = [
-        "spinner-box", "earth-orbit orbit", "planet earth", "venus-orbit orbit",
-        "planet venus", "mercury-orbit orbit", "planet mercury", "sun"
+        "spinner-box",
+        "earth-orbit orbit",
+        "planet earth",
+        "venus-orbit orbit",
+        "planet venus",
+        "mercury-orbit orbit",
+        "planet mercury",
+        "sun",
     ]
     return construct_spinner(class_names)
+
 
 def spin_orbit() -> str:
     class_names = [
-        "spinner-box", "blue-orbit leo","green-orbit leo","red-orbit leo",
+        "spinner-box",
+        "blue-orbit leo",
+        "green-orbit leo",
+        "red-orbit leo",
         "white-orbit w1 leo",
-        "white-orbit w2 leo","white-orbit w3 leo"
+        "white-orbit w2 leo",
+        "white-orbit w3 leo",
     ]
     return construct_spinner(class_names)
+
 
 def spin_squares() -> str:
     class_names = [
-        "spinner-box", "configure-border-1", "configure-core", "configure-border-2", "configure-core"
+        "spinner-box",
+        "configure-border-1",
+        "configure-core",
+        "configure-border-2",
+        "configure-core",
     ]
     return construct_spinner(class_names)
+
 
 def spin_cube_grid() -> str:
-    class_names =[
-        "sk-cube-grid","sk-cube sk-cube1","sk-cube sk-cube2","sk-cube sk-cube3","sk-cube sk-cube4",
-        "sk-cube sk-cube5","sk-cube sk-cube6","sk-cube sk-cube7","sk-cube sk-cube8","sk-cube sk-cube9"
+    class_names = [
+        "sk-cube-grid",
+        "sk-cube sk-cube1",
+        "sk-cube sk-cube2",
+        "sk-cube sk-cube3",
+        "sk-cube sk-cube4",
+        "sk-cube sk-cube5",
+        "sk-cube sk-cube6",
+        "sk-cube sk-cube7",
+        "sk-cube sk-cube8",
+        "sk-cube sk-cube9",
     ]
     return construct_spinner(class_names)
 
-#def spin_circles() -> str:
+
+# def spin_circles() -> str:
 #    return construct_spinner("lds-circle")
 
+
 def spin_orbiter() -> str:
-    class_names = [
-        "orbiter-spinner", "orbiter", "orbiter", "orbiter"
-    ]
+    class_names = ["orbiter-spinner", "orbiter", "orbiter", "orbiter"]
     return construct_spinner(class_names)
-    
+
+
 def spin_pixel() -> str:
     return construct_spinner(["pixel-spinner", "pixel-spinner-inner"])
+
 
 def spin_flower() -> str:
     class_names = ["flower-spinner", "dots-container", "bigger-dot", "smaller-dot"]
