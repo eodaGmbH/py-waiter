@@ -1,11 +1,14 @@
-def construct_spinner(class_names) -> str:
+from typing import List
+
+
+def construct_spinner(class_names: List[str]) -> str:
     return (
         "".join([f"<div class='{cn}'>" for cn in class_names])
         + len(class_names) * "</div>"
     )
 
 
-def spin_n(n=1) -> str:
+def spin_n(n: int == 1) -> str:
     class_names = ["container--box", "boxxy", f"spinner spinner--{n}"]
     return construct_spinner(class_names)
 
